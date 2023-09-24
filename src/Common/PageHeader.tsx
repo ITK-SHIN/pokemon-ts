@@ -2,7 +2,12 @@ import styled from '@emotion/styled';
 
 const PageHeader = () => (
   <Header>
-    <Title>페이지 헤더</Title>
+    <Title>Pokémon</Title>
+    <Select>
+      <option value="Official">Official</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+    </Select>
   </Header>
 );
 
@@ -16,6 +21,19 @@ const Header = styled.nav`
 const Title = styled.h1`
   margin: 0;
   font-size: 32px;
+  color: #ffca09;
+  text-shadow:
+    -1px 0 blue,
+    0 2px blue,
+    1px 0 blue,
+    0 -1px blue;
+`;
+
+const Select = styled.select`
+  display: flex;
+  margin-left: auto;
+  padding: 8px 12px;
+  border-radius: 8px;
 `;
 
 export default PageHeader;
