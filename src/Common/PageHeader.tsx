@@ -5,8 +5,8 @@ const PageHeader = () => (
     <Title>Pokémon</Title>
     <Select>
       <option value="Official">Official</option>
-      <option value="A">A</option>
-      <option value="B">B</option>
+      <option value="AA">AA</option>
+      <option value="BB">BB</option>
     </Select>
   </Header>
 );
