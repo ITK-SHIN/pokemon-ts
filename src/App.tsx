@@ -1,11 +1,11 @@
-/* eslint-disable import/extensions */
-/* eslint-disable import/no-unresolved */
 import PageHeader from './Common/PageHeader';
+import PokeCardList from './List/PokeCardList';
 
 function App() {
   return (
     <>
       <PageHeader />
+      <PokeCardList />
     </>
   );
 }

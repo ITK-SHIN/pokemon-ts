@@ -1,5 +1,4 @@
 {
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest"
   },
@@ -11,7 +10,7 @@
   },
   "globals": { "_": true },
   "plugins": ["import", "html", "react", "@typescript-eslint"],
-  "extends": ["airbnb-base", "prettier", "react-app"],
+  "extends": ["airbnb-base", "prettier", "react-app", "airbnb-typescript/base"],
   "rules": {
     // "off" or 0 - turn the rule off
     // "warn" or 1 - turn the rule on as a warning (doesn’t affect exit code)
@@ -58,5 +57,6 @@
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
-  }
+  },
+  "parser": "@typescript-eslint/parser"
 }
