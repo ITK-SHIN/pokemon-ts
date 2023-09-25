@@ -6,7 +6,7 @@ const PokeNameChip = () => (
     <NumberChip>
       <Number>001</Number>
     </NumberChip>
-    <Text>이상해씨</Text>
+    <Text>피카츄</Text>
   </Chip>
 );
 
