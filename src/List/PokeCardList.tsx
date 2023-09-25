@@ -11,6 +11,8 @@ const PokeCardList = () => (
 
 const List = styled.ul`
   list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
 
   display: flex;
   flex-direction: row;
