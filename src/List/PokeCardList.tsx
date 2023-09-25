@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import React from 'react';
 import PokeCard from './PokeCard';
 
 const PokeCardList = () => (
@@ -10,6 +9,13 @@ const PokeCardList = () => (
   </List>
 );
 
-const List = styled.ul``;
+const List = styled.ul`
+  list-style: none;
 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+`;
 export default PokeCardList;

@@ -1,5 +1,10 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -12,4 +17,5 @@
     ]
   },
   "extends": ["plugin:import/errors", "plugin:import/warnings", "plugin:import/typescript"]
+  // Note: you must disable the base rule as it can report incorrect errors
 }
