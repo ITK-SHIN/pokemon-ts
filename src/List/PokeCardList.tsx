@@ -18,6 +18,6 @@ const List = styled.ul`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 `;
 export default PokeCardList;

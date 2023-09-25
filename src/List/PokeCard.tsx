@@ -45,7 +45,6 @@ const Item = styled.li`
 
   &:hover {
     transform: scale(1.1);
-    background-color: white;
   }
 
   &:active {
