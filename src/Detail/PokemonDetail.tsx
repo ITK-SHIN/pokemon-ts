@@ -4,9 +4,13 @@ import { useEffect, useState } from 'react';
 import { PokemonDetailType, fetchPokemonDetail } from '../Service/pokemonService';
 import { useParams } from 'react-router';
 import { PokeImageSkeleton } from '../Common/PokeImageSkeleton';
+import { useSelector } from 'react-redux';
+import { RootState } from '../Store';
 
 const PokemonDetail = () => {
   const { name } = useParams();
+  const imageType = useSelector((state: RootState) => state.imageType.type);
+
   const [pokemon, setPokemon] = useState<PokemonDetailType | null>(null);
 
   useEffect(() => {
@@ -37,7 +41,7 @@ const PokemonDetail = () => {
   return (
     <Container>
       <ImageContainer>
-        <Image src={pokemon.images.dreamWorldFront} alt={pokemon.koreanName} />
+        <Image src={pokemon.images[imageType]} alt={pokemon.koreanName} />
       </ImageContainer>
       <Divider />
       <Body>
