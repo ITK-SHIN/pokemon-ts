@@ -16,6 +16,7 @@
       }
     ]
   },
-  "extends": ["plugin:import/errors", "plugin:import/warnings", "plugin:import/typescript"]
-  // Note: you must disable the base rule as it can report incorrect errors
+  "extends": ["plugin:import/errors", "plugin:import/warnings", "plugin:import/typescript"],
+  // Note: you must disable the base rule as it can report incorrect errors,
+  "no-shadow": "off"
 }

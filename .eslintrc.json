@@ -54,7 +54,8 @@
         "ignoreTemplateLiterals": true
       }
     ], // prettier의 printWidth 옵션 대신 사용,
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "eslint.enable": 0
   },
   "settings": {
     "import/resolver": {
