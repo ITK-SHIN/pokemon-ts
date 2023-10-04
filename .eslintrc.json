@@ -1,6 +1,7 @@
 {
-  "parser": "@typescript-eslint/parser",
+  "parser": "babel-eslint",
   "parserOptions": {
+    "sourceType": "module",
     "ecmaVersion": "latest",
     "project": "./tsconfig.json"
   },
